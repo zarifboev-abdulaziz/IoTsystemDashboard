@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT System Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">IoT System Dashboard</h1>
+
+  <div class="row">
+    <!-- Sensor Data Display -->
+    <div class="col-md-6">
+      <h3>Sensor Data</h3>
+      <div class="card p-3 mb-4">
+        <p><strong>Brightness Level:</strong> <span id="brightness">Loading...</span></p>
+        <p><strong>Water Level:</strong> <span id="water">Loading...</span></p>
+        <p><strong>Temperature:</strong> <span id="temperature">Loading...</span>°C</p>
+        <p><strong>Humidity:</strong> <span id="humidity">Loading...</span>%</p>
+      </div>
+
+      <div id="alerts" class="alert-message mb-4"></div>
+    </div>
+
+    <!-- Actuator Controls -->
+    <div class="col-md-6">
+        <h3>Control Actuators</h3>
+        <button id="ledButton" class="btn off mb-2">LED: OFF</button>
+        <button id="buzzerButton" class="btn off mb-2">Buzzer: OFF</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

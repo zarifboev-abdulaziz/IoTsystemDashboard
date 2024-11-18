@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  .card {
+    border-radius: 8px;
+  }
+  
+  #alerts {
+    font-weight: bold;
+  }
+  
+
+  .btn.on {
+    background-color: #28a745;
+    color: #fff;
+  }
+  .btn.off {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  .alert-message {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #dc3545;
+  }
